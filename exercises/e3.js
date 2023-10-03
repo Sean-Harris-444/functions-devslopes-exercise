@@ -9,12 +9,24 @@
  * The function take an arr (array), val1 (number) and val2 (number) as arguments.
  * The function returns a boolean if array includes an item that is greater than val1 and less than val2
  * The function MUST have 2 return statements: make an early return if the item is found and use the default return otherwise
- * The function MUST be written with NAMED function syntax.
+ * The function MUST be written wit`h NAMED function syntax.
  * doesArrayIncludeItemsBetweenVals([2, 4, 2], 3, 5) => true
  * doesArrayIncludeItemsBetweenVals([2, 4, 2], 5, 10) => false
  */
 
 // Your code goes here...
+
+
+function doesArrayIncludeItemsBetweenVals(arr, val1, val2) {
+  for (let i of arr) {
+  if (i > val1 && i < val2) {
+    return true; 
+  } 
+}
+return false;
+}
+
+doesArrayIncludeItemsBetweenVals([ 6, 7, 8 ], 5, 10);
 
 
 
@@ -35,6 +47,47 @@
  */
 
 // Your code goes here...
+
+function getValueWithConditionOne(num1, num2){
+  if (num1 === 40 && num2 === 40) {return num1 + num2;}
+  else {
+    return (num1 + num2) * 2;
+  }
+}
+
+getValueWithConditionOne(40, 50)
+getValueWithConditionOne(20, 30)
+getValueWithConditionOne(50, 40)
+getValueWithConditionOne(50, 50)
+
+
+const getValueWithConditionTwo = (num1, num2) => {
+  if (num1 === 40 && num2 === 40) {return num1 + num2;}
+  else {
+    return (num1 + num2) * 2;
+  }
+}
+
+getValueWithConditionTwo(40, 50)
+getValueWithConditionTwo(20, 30)
+getValueWithConditionTwo(50, 40)
+getValueWithConditionTwo(50, 50)
+
+
+const getValueWithConditionThree = function(num1, num2) {
+  if (num1 === 40 && num2 === 40) {return num1 + num2;}
+  else {
+    return (num1 + num2) * 2;
+  }
+}
+
+getValueWithConditionThree(40, 50)
+getValueWithConditionThree(20, 30)
+getValueWithConditionThree(50, 40)
+getValueWithConditionThree(50, 50)
+
+
+ 
 
 
 
